@@ -3,7 +3,7 @@
 <p align="center"> BLOC.</p>
 
 <p align="center">
-<img width="" height="270" src="assets/images/Bloc.gif"/>
+<img width="" height="270" src="assets/images/Bloc2.gif"/>
 </p>
 
 
