@@ -1,4 +1,4 @@
-<h1 align="center">ESTUDANDO O BLOC</h1>
+<h1 align="center">ESTUDANDO O BLOC e CUBIT</h1>
 
 <p align="center"> BLOC.</p>
 
@@ -9,23 +9,13 @@
 
 ### » SOBRE O APLICATIVO:
 
-- Aplicando os conceitos de gerenciamento de estado com o BLOC.
-- .
-<div>
-      <input type="checkbox" checked>
-      <label>Contador com incremento e decremento númerico</label>
-    </div>
+✅ Aplicando os conceitos de gerenciamento de estado com o BLOC;
+
+✅ Contador com incremento e decremento númerico;
+
+⬜ Aplicando os conceitos de gerenciamento de estado com o CUBIT.
 
 
-- [x] Design
-
-- \[] 55555
-
-:white_check_mark: - dfdfdf
-
-
-
-ballot_box_with_check:
 
 
 
