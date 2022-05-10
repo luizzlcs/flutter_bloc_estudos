@@ -19,7 +19,7 @@
 
 - [x] Design
 
-- [] 55555
+-[] 55555
 
 ballot_box_with_check:
 
