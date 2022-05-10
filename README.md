@@ -10,7 +10,11 @@
 ### » SOBRE O APLICATIVO:
 
 - Aplicando os conceitos de gerenciamento de estado com o BLOC.
-- Contador com incremento e decremento númerico.
+- .
+<div>
+      <input type="checkbox" checked>
+      <label>Contador com incremento e decremento númerico</label>
+    </div>
 
 
 
