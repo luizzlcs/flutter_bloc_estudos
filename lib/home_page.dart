@@ -11,28 +11,54 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.only(left: 10, right: 10),
+          padding: const EdgeInsets.only(left: 20, right: 20),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              TextButton(
-                onPressed: () {
-                  Navigator.of(context).pushNamed('/bloc');
-                },
-                child: Text(
-                  'Bloc',
-                  style: Theme.of(context).textTheme.headlineMedium,
+              const SizedBox(height: 30),
+              const Image(
+                width: 150.0,
+                height: 150.0,
+                image: NetworkImage(
+                  'https://raw.githubusercontent.com/felangel/bloc/master/docs/assets/bloc_logo_full.png',
                 ),
               ),
-              TextButton(
-                onPressed: () {
-                  Navigator.of(context).pushNamed('/cubit');
-                },
-                child: Text(
-                  'Cubit',
-                  style: Theme.of(context).textTheme.headlineMedium,
-                ),
+              const SizedBox(height: 20),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).pushNamed('/bloc');
+                    },
+                    style: ElevatedButton.styleFrom(
+                      primary: Color.fromARGB(255, 89, 61, 107),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                    ),
+                    child: Text(
+                      'Bloc',
+                      style: TextStyle(fontSize: 26, color: Colors.white),
+                    ),
+                  ),
+                  const SizedBox(height: 5),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).pushNamed('/cubit');
+                    },
+                    style: ElevatedButton.styleFrom(
+                      primary: Color.fromARGB(255, 89, 61, 107),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                    ),
+                    child: const Text(
+                      'Cubit',
+                      style: TextStyle(fontSize: 26, color: Colors.white),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),

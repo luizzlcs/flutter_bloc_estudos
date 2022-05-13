@@ -18,7 +18,7 @@ class CounterCubitPage extends StatelessWidget {
             BlocBuilder<CounterCubit, CounterState>(
               builder: (context, state) {
                 return Text(
-                  'Counter: ${state.counter}',
+                  '${state.counter}',
                   style: Theme.of(context).textTheme.headlineMedium,
                 );
               },

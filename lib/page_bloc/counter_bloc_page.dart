@@ -30,9 +30,12 @@ class CounterBlocPage extends StatelessWidget {
                   ),
                   Align(
                     alignment: Alignment.center,
-                    child: Text(
-                      '${state.counter}',
-                      style: Theme.of(context).textTheme.headlineMedium,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        '${state.counter}',
+                        style: Theme.of(context).textTheme.headlineMedium,
+                      ),
                     ),
                   ),
                 ]);

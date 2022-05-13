@@ -9,11 +9,26 @@
 
 ### » SOBRE O APLICATIVO:
 
-✅ Aplicando os conceitos de gerenciamento de estado com o BLOC;
+✅ Aplicando os conceitos de gerenciamento de estado com o BLOC e CUBIT;
 
-✅ Contador com incremento e decremento númerico;
+✅ Gerenciando o Contador com incremento e decremento númerico;
 
-⬜ Aplicando os conceitos de gerenciamento de estado com o CUBIT.
+✅ Utilizado o BlocProvider para gerenciar as rotas de navegação;
+
+    > O Bloc é um padrão de design que ajuda a separar a camada de apresentação da lógica de negócio da UI;
+
+    > O Bloc recebe um fluxo de eventos com entradas e os transforma em um fluxo de estados com daída;
+
+    > Os Eventos são entradas para o bloc, geralmente são eventos da interface do usuário.
+
+    > Os estados são a saída de um bloc.
+
+### CUBIT
+
+    > Já com o CUBIT é abandona o conceito de eventos e simplifica a maneira de emitir estados;
+
+    > O CUBIT É uma classe que armazena um estado observável pela UI, a comunicação é feita por Stream, porém de uma maneira abstraída e bem amigável.
+
 
 
 
