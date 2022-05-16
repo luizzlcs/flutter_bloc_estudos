@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc_estudos/core/botoes.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -27,37 +28,17 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).pushNamed('/bloc');
-                    },
-                    style: ElevatedButton.styleFrom(
-                      primary: Color.fromARGB(255, 89, 61, 107),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(50),
-                      ),
-                    ),
-                    child: Text(
-                      'Bloc',
-                      style: TextStyle(fontSize: 26, color: Colors.white),
-                    ),
-                  ),
+                  Botoes(
+                      nomeBotao: 'Bloc',
+                      dentroDoOnPressed: () {
+                        Navigator.of(context).pushNamed('/bloc');
+                      }),
                   const SizedBox(height: 5),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).pushNamed('/cubit');
-                    },
-                    style: ElevatedButton.styleFrom(
-                      primary: Color.fromARGB(255, 89, 61, 107),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(50),
-                      ),
-                    ),
-                    child: const Text(
-                      'Cubit',
-                      style: TextStyle(fontSize: 26, color: Colors.white),
-                    ),
-                  ),
+                  Botoes(
+                      nomeBotao: 'Cubit',
+                      dentroDoOnPressed: () {
+                        Navigator.of(context).pushNamed('/cubit');
+                      })
                 ],
               ),
             ],
